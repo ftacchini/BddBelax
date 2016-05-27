@@ -1,3 +1,5 @@
 /MathOperations/packages
 /MathOperations/.vs
 /MathOperations/TestResults
+/MathOperations/**/bin/
+/MathOperations/**/obj/
