@@ -1,0 +1,11 @@
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\AccptanceTests.dll.config
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\AccptanceTests.dll
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\AccptanceTests.pdb
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\nunit.framework.dll
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\TechTalk.SpecFlow.dll
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\nunit.framework.xml
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\obj\Debug\AccptanceTests.dll
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\obj\Debug\AccptanceTests.pdb
+C:\Users\ftacchini\Documents\Visual Studio 2015\Projects\ProjectoParaElCurso1\AccptanceTests\obj\Debug\AccptanceTests.csprojResolveAssemblyReference.cache
