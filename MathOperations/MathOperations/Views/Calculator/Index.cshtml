@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Calculator";
+}
+
+<div class="calculator" ng-controller="calculatorController">
+    <input type="number" ng-model="number1" id="number1"/>
+
+    <button id="add" ng-disabled="operation == '+'" ng-click="operation = '+'">+</button>
+    <button id="substract" ng-disabled="operation == '-'" ng-click="operation = '-'">-</button>
+    <button id="multiply" ng-disabled="operation == '*'" ng-click="operation = '*'">*</button>
+    <button id="divide" ng-disabled="operation == '/'" ng-click="operation = '/'">/</button>
+
+    <input type="number" ng-model="number2" id="number2"/>
+
+    <button id="equals" ng-click="calculate()">
+        =
+    </button>
+
+    <span id="result"> {{result}}</span>
+
+</div>
+

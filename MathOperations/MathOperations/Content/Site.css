@@ -16,3 +16,11 @@ textarea {
     max-width: 280px;
 }
 
+
+button[disabled]{
+    background-color: lightcyan;
+}
+
+.calculator{
+    padding-top: 30px;
+}
