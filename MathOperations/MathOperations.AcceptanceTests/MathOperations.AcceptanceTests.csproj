@@ -35,11 +35,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.0.5797.27534, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.0.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Drawing" />
     <Reference Include="TechTalk.SpecFlow, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.1.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
@@ -67,6 +76,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Api\Features\ApiOperations.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApiOperations.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Steps\ApiOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Web\Features\WebOperations1.feature.cs">
       <AutoGen>True</AutoGen>
@@ -77,6 +92,10 @@
     <Compile Include="Web\Steps\WebOperations.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Api\Features\ApiOperations.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ApiOperations.feature.cs</LastGenOutput>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Web\Features\WebOperations.feature">
@@ -84,11 +103,14 @@
       <LastGenOutput>WebOperations1.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\MathOperations.PageObjectFramework\MathOperations.PageObjectFramework.csproj">
       <Project>{10d759f9-0231-42d2-9b0a-a12b85150abe}</Project>
       <Name>MathOperations.PageObjectFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MathOperations\MathOperations.csproj">
+      <Project>{9451dc5a-2c20-4a99-93fe-bf0317a519ff}</Project>
+      <Name>MathOperations</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,7 +61,7 @@ namespace AccptanceTests.Web.Pages
 
         public void Navigate()
         {
-            base.VisitPage("http://localhost:49481/");
+            base.VisitPage(ConfigurationManager.AppSettings["WebUrl"]);
         }
     }
 }

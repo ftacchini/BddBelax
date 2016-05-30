@@ -14,7 +14,7 @@ namespace MathOperations.PageObjectFramework
             return (T)PageObjectFactory.Instance(typeof(T));
         }
 
-        [AfterScenario]
+        [AfterScenario("web")]
         public void AfterScenario()
         {
             PageObjectFactory.Close();

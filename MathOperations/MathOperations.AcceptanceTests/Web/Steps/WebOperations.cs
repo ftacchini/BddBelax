@@ -63,5 +63,6 @@ namespace AccptanceTests.Web.Steps
             Assert.AreEqual(On<CalculatorPage>().Result.Text, expectedResult.ToString());
         }
 
+        
     }
 }
