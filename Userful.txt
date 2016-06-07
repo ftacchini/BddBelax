@@ -1,0 +1,3 @@
+http://stackoverflow.com/questions/14653722/how-do-i-give-asp-net-permission-to-write-to-a-folder-in-windows-7
+http://www.jammer.biz/enable-asp-net-on-windows-10/
+http://www.hamishgraham.net/post/TeamCity-SpecFlow-Integration.aspx
