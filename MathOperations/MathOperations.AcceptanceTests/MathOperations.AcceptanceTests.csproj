@@ -77,6 +77,11 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Api\Features\ApiOperationHistory.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApiOperationHistory.feature</DependentUpon>
+    </Compile>
     <Compile Include="Api\Features\ApiOperations.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,21 +89,35 @@
     </Compile>
     <Compile Include="Api\Steps\ApiOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Features\OperationHistory.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OperationHistory.feature</DependentUpon>
+    </Compile>
     <Compile Include="Web\Features\WebOperations1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>WebOperations.feature</DependentUpon>
     </Compile>
     <Compile Include="Web\Pages\CalculatorPage.cs" />
+    <Compile Include="Web\Steps\OperationHistory.cs" />
     <Compile Include="Web\Steps\WebOperations.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Api\Features\ApiOperationHistory.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ApiOperationHistory.feature.cs</LastGenOutput>
+    </None>
     <None Include="Api\Features\ApiOperations.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ApiOperations.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Web\Features\OperationHistory.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>OperationHistory.feature.cs</LastGenOutput>
+    </None>
     <None Include="Web\Features\WebOperations.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>WebOperations1.feature.cs</LastGenOutput>

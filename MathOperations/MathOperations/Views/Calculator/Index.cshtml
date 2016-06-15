@@ -29,7 +29,7 @@
 
         <h2>Operations History</h2>
         <br />
-        <div ng-repeat="element in history">
+        <div ng-repeat="element in history" id="{{$index+'history'}}">
             <span>{{element.Operation.Number1}}</span>
             <span>{{element.Operator}}</span>
             <span>{{element.Operation.Number2}}</span>

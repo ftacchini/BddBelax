@@ -37,8 +37,11 @@ namespace MathOperations.PageObjectFramework
 
         public static void CloseCurrent()
         {
-            _instance.Quit();
-            _instance = null;
+            if (_instance != null)
+            {
+                _instance.Quit();
+                _instance = null;
+            }
         }
     }
 }

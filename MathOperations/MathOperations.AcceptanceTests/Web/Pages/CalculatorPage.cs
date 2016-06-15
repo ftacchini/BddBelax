@@ -41,6 +41,17 @@ namespace AccptanceTests.Web.Pages
 
         [FindsBy(How = How.Id, Using = "result")]
         private IWebElement _result;
+
+        [FindsBy(How = How.Id, Using = "0history")]
+        public IWebElement history0 { get; set; }
+        [FindsBy(How = How.Id, Using = "1history")]
+        public IWebElement history1 { get; set; }
+        [FindsBy(How = How.Id, Using = "2history")]
+        public IWebElement history2 { get; set; }
+        [FindsBy(How = How.Id, Using = "3history")]
+        public IWebElement history3 { get; set; }
+        [FindsBy(How = How.Id, Using = "4history")]
+        public IWebElement history4 { get; set; }
         public IWebElement Result
         {
             get

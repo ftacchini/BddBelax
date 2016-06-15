@@ -1,0 +1,292 @@
+Given I have set 12 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("12") (0.1s)
+And I have set 5 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("5") (0.0s)
+When I send the "add" request
+-> done: ApiOperations.WhenISendTheRequest("add") (1.4s)
+Then the result should be 17 on the response
+-> error:   Expected: 17.0d
+  But was:  18.0d
+
+Given I have set -20 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-20") (0.0s)
+And I have set -5 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-5") (0.0s)
+When I send the "add" request
+-> done: ApiOperations.WhenISendTheRequest("add") (0.0s)
+Then the result should be -25 on the response
+-> error:   Expected: -25.0d
+  But was:  -24.0d
+
+Given I have set 180 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("180") (0.0s)
+And I have set -3 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-3") (0.0s)
+When I send the "add" request
+-> done: ApiOperations.WhenISendTheRequest("add") (0.0s)
+Then the result should be 177 on the response
+-> error:   Expected: 177.0d
+  But was:  178.0d
+
+Given I have set -24 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-24") (0.0s)
+And I have set 32 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("32") (0.0s)
+When I send the "add" request
+-> done: ApiOperations.WhenISendTheRequest("add") (0.0s)
+Then the result should be 8 on the response
+-> error:   Expected: 8.0d
+  But was:  9.0d
+
+Given I have set -1123 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-1123") (0.0s)
+And I have set 2 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("2") (0.0s)
+When I send the "add" request
+-> done: ApiOperations.WhenISendTheRequest("add") (0.0s)
+Then the result should be -1121 on the response
+-> error:   Expected: -1121.0d
+  But was:  -1120.0d
+
+Given I have set 2512 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("2512") (0.0s)
+And I have set 51 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("51") (0.0s)
+When I send the "add" request
+-> done: ApiOperations.WhenISendTheRequest("add") (0.0s)
+Then the result should be 2563 on the response
+-> error:   Expected: 2563.0d
+  But was:  2564.0d
+
+Given I have set 12 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("12") (0.0s)
+And I have set 6 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("6") (0.0s)
+When I send the "divide" request
+-> done: ApiOperations.WhenISendTheRequest("divide") (0.0s)
+Then the result should be 2 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("2") (0.0s)
+Given I have set -20 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-20") (0.0s)
+And I have set -5 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-5") (0.0s)
+When I send the "divide" request
+-> done: ApiOperations.WhenISendTheRequest("divide") (0.0s)
+Then the result should be 4 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("4") (0.0s)
+Given I have set 180 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("180") (0.0s)
+And I have set -3 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-3") (0.0s)
+When I send the "divide" request
+-> done: ApiOperations.WhenISendTheRequest("divide") (0.0s)
+Then the result should be -60 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("-60") (0.0s)
+Given I have set -8 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-8") (0.0s)
+And I have set 2 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("2") (0.0s)
+When I send the "divide" request
+-> done: ApiOperations.WhenISendTheRequest("divide") (0.0s)
+Then the result should be -4 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("-4") (0.0s)
+Given I have set 12 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("12") (0.0s)
+And I have set 6 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("6") (0.0s)
+When I send the "multiply" request
+-> done: ApiOperations.WhenISendTheRequest("multiply") (0.0s)
+Then the result should be 72 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("72") (0.0s)
+Given I have set -20 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-20") (0.0s)
+And I have set -5 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-5") (0.0s)
+When I send the "multiply" request
+-> done: ApiOperations.WhenISendTheRequest("multiply") (0.0s)
+Then the result should be 100 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("100") (0.0s)
+Given I have set 180 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("180") (0.0s)
+And I have set -3 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-3") (0.0s)
+When I send the "multiply" request
+-> done: ApiOperations.WhenISendTheRequest("multiply") (0.0s)
+Then the result should be -540 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("-540") (0.0s)
+Given I have set -8 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-8") (0.0s)
+And I have set 2 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("2") (0.0s)
+When I send the "multiply" request
+-> done: ApiOperations.WhenISendTheRequest("multiply") (0.0s)
+Then the result should be -16 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("-16") (0.0s)
+Given I have set 12 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("12") (0.0s)
+And I have set 5 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("5") (0.0s)
+When I send the "substract" request
+-> done: ApiOperations.WhenISendTheRequest("substract") (0.0s)
+Then the result should be 7 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("7") (0.0s)
+Given I have set -20 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-20") (0.0s)
+And I have set -5 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-5") (0.0s)
+When I send the "substract" request
+-> done: ApiOperations.WhenISendTheRequest("substract") (0.0s)
+Then the result should be -15 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("-15") (0.0s)
+Given I have set 180 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("180") (0.0s)
+And I have set -3 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("-3") (0.0s)
+When I send the "substract" request
+-> done: ApiOperations.WhenISendTheRequest("substract") (0.0s)
+Then the result should be 183 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("183") (0.0s)
+Given I have set -24 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-24") (0.0s)
+And I have set 32 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("32") (0.0s)
+When I send the "substract" request
+-> done: ApiOperations.WhenISendTheRequest("substract") (0.0s)
+Then the result should be -56 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("-56") (0.0s)
+Given I have set -1123 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("-1123") (0.0s)
+And I have set 2 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("2") (0.0s)
+When I send the "substract" request
+-> done: ApiOperations.WhenISendTheRequest("substract") (0.0s)
+Then the result should be -1125 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("-1125") (0.0s)
+Given I have set 2512 in a request as first number
+-> done: ApiOperations.GivenIHaveSetInARequestAsFirstNumber("2512") (0.0s)
+And I have set 51 in a request as second number
+-> done: ApiOperations.GivenIHaveSetInARequestAsSecondNumber("51") (0.0s)
+When I send the "substract" request
+-> done: ApiOperations.WhenISendTheRequest("substract") (0.0s)
+Then the result should be 2461 on the response
+-> done: ApiOperations.ThenTheResultShouldBeOnTheResponse("2461") (0.0s)
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (5.1s)
+Given I have entered 12 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(12) (0.2s)
+And I have pressed the "add" button
+-> done: WebOperations.GivenIHavePressedTheButton("add") (0.1s)
+And I have entered 5 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(5) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be 17 on the screen
+-> error:   String lengths are both 2. Strings differ at index 1.
+  Expected: "18"
+  But was:  "17"
+  ------------^
+
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (3.7s)
+Given I have entered -20 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(-20) (0.1s)
+And I have pressed the "add" button
+-> done: WebOperations.GivenIHavePressedTheButton("add") (0.1s)
+And I have entered -5 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(-5) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be -25 on the screen
+-> error:   String lengths are both 3. Strings differ at index 2.
+  Expected: "-24"
+  But was:  "-25"
+  -------------^
+
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (4.0s)
+Given I have entered 180 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(180) (0.2s)
+And I have pressed the "add" button
+-> done: WebOperations.GivenIHavePressedTheButton("add") (0.1s)
+And I have entered -3 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(-3) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be 177 on the screen
+-> error:   String lengths are both 3. Strings differ at index 2.
+  Expected: "178"
+  But was:  "177"
+  -------------^
+
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (3.8s)
+Given I have entered -24 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(-24) (0.1s)
+And I have pressed the "add" button
+-> done: WebOperations.GivenIHavePressedTheButton("add") (0.1s)
+And I have entered 32 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(32) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be 8 on the screen
+-> error:   String lengths are both 1. Strings differ at index 0.
+  Expected: "9"
+  But was:  "8"
+  -----------^
+
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (3.9s)
+Given I have entered -1123 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(-1123) (0.1s)
+And I have pressed the "add" button
+-> done: WebOperations.GivenIHavePressedTheButton("add") (0.1s)
+And I have entered 2 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(2) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be -1121 on the screen
+-> error:   String lengths are both 5. Strings differ at index 4.
+  Expected: "-1120"
+  But was:  "-1121"
+  ---------------^
+
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (3.9s)
+Given I have entered 2512 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(2512) (0.1s)
+And I have pressed the "add" button
+-> done: WebOperations.GivenIHavePressedTheButton("add") (0.1s)
+And I have entered 51 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(51) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be 2563 on the screen
+-> error:   String lengths are both 4. Strings differ at index 3.
+  Expected: "2564"
+  But was:  "2563"
+  --------------^
+
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (3.7s)
+Given I have entered 12 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(12) (0.1s)
+And I have pressed the "divide" button
+-> done: WebOperations.GivenIHavePressedTheButton("divide") (0.1s)
+And I have entered 6 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(6) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be 2 on the screen
+-> done: WebOperations.ThenTheResultShouldBeOnTheScreen(2) (0.2s)
+Given I have navigated to the calculators page
+-> done: WebOperations.GivenIHaveNavigatedToTheCalculatorsPage() (3.4s)
+Given I have entered -20 into the calculator as first number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsFirstNumber(-20) (0.1s)
+And I have pressed the "divide" button
+-> done: WebOperations.GivenIHavePressedTheButton("divide") (0.1s)
+And I have entered -5 into the calculator as second number
+-> done: WebOperations.GivenIHaveEnteredIntoTheCalculatorAsSecondNumber(-5) (0.1s)
+When I press the equals button
+-> done: WebOperations.WhenIPressTheEqualsButton() (0.1s)
+Then the result should be 4 on the screen
+-> done: WebOperations.ThenTheResultShouldBeOnTheScreen(4) (0.2s)
