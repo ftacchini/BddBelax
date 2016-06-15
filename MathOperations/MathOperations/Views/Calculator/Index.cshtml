@@ -4,20 +4,38 @@
 }
 
 <div class="calculator" ng-controller="calculatorController">
-    <input type="number" ng-model="number1" id="number1"/>
+    <div class="calc">
 
-    <button id="add" ng-disabled="operation == '+'" ng-click="operation = '+'">+</button>
-    <button id="substract" ng-disabled="operation == '-'" ng-click="operation = '-'">-</button>
-    <button id="multiply" ng-disabled="operation == '*'" ng-click="operation = '*'">*</button>
-    <button id="divide" ng-disabled="operation == '/'" ng-click="operation = '/'">/</button>
+        <h2>Operations Calculator</h2>
+        <br/>
+        <input type="number" ng-model="number1" id="number1" />
 
-    <input type="number" ng-model="number2" id="number2"/>
+        <button id="add" ng-disabled="operation == '+'" ng-click="operation = '+'">+</button>
+        <button id="substract" ng-disabled="operation == '-'" ng-click="operation = '-'">-</button>
+        <button id="multiply" ng-disabled="operation == '*'" ng-click="operation = '*'">*</button>
+        <button id="divide" ng-disabled="operation == '/'" ng-click="operation = '/'">/</button>
 
-    <button id="equals" ng-click="calculate()">
-        =
-    </button>
+        <input type="number" ng-model="number2" id="number2" />
 
-    <span id="result"> {{result}}</span>
+        <button id="equals" ng-click="calculate()">
+            =
+        </button>
 
+        <span id="result"> {{result}}</span>
+
+    </div>
+
+    <div class="history">
+
+        <h2>Operations History</h2>
+        <br />
+        <div ng-repeat="element in history">
+            <span>{{element.Operation.Number1}}</span>
+            <span>{{element.Operator}}</span>
+            <span>{{element.Operation.Number2}}</span>
+            =
+            <span>{{element.Result}}</span>
+        </div>
+    </div>
 </div>
 

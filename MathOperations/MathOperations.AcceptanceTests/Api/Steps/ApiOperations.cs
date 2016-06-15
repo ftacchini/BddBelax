@@ -34,14 +34,21 @@ namespace AccptanceTests.Api.Steps
         [When(@"I send the ""(.*)"" request")]
         public void WhenISendTheRequest(string requestUrl)
         {
-            var restClient = new RestClient();
+            var restClient = new RestClient(ConfigurationManager.AppSettings["WebUrl"]);
 
-            var request = new HttpRequestWrapper()
-                               .SetMethod(Method.POST)
-                               .SetResourse("/api/" + requestUrl)
-                               .AddJsonContent(_request);
+            //var request = new HttpRequestWrapper()
+            //                   .SetMethod(Method.POST)
+            //                   .SetResourse("/api/" + requestUrl)
+            //                  .AddJsonContent(_request);
 
-            var restResponse = request.Execute();
+            var restRequest = new RestRequest();
+            restRequest.Method = Method.POST;
+            restRequest.Resource = "/api/" + requestUrl;
+            restRequest.RequestFormat = DataFormat.Json;
+            restRequest.AddHeader("Content-Type", "application/json");
+            restRequest.AddBody(_request);
+
+            var restResponse = restClient.Execute(restRequest);
             _result = JsonConvert.DeserializeObject<double>(restResponse.Content);
         }
 

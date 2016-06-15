@@ -11,7 +11,11 @@ namespace ProjectoParaElCurso1.Controllers
     {
         public IHttpActionResult PostSubstract(Operation operation)
         {
-            return Ok(operation.Number1 - operation.Number2);
+            var result = operation.Number1 - operation.Number2;
+            var operationResult = new OperationResult { Operation = operation, Result = result, Operator = "-" };
+            InMemoryDb.Add(operationResult);
+
+            return Ok(operationResult.Result);
         }
     }
 }
